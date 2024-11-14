@@ -1,0 +1,20 @@
+<div>
+    <form #formCreate="ngForm">
+        <label for="" class="form-control">Nombre</label>
+        <input type="text" name="cajanombre" #cajanombre class="form-control">
+        <br>
+        <label for="" class="form-control">Apellidos</label>
+        <input type="text" name="cajaapellidos" #cajaapellidos class="form-control">
+        <br>
+        <label for="" class="form-control">Imagen</label>
+        <input type="text" name="cajaimagen" #cajaimagen class="form-control">
+        <br>
+        <label for="" class="form-control">Activo</label>
+        <input type="number" name="cajaactivo" #cajaactivo class="form-control">
+        <br>
+        <label for="" class="form-control">Curso</label>
+        <input type="number" name="cajaidcurso" #cajaidcurso class="form-control">
+        <br>
+        <button (click)="createAlumno()">CreateAlumno</button>
+    </form>
+</div>

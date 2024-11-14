@@ -1,0 +1,24 @@
+<div>
+
+    @if (alumnos){
+    <h1>Lista Alumnos</h1>
+    <a class="btn btn-success" [routerLink]="['/create']" routerLinkActive="router-link-active">Crear Alumno</a>
+    <br>
+    <div class="d-flex flex-wrap justify-content-around">
+        @for (alumno of alumnos;track alumno){
+
+        <div class="card" style="width: 18rem">
+            <img src={{alumno.imagen}} class="card-img-top" alt="..." />
+            <div class="card-body">
+                <p class="card-text">{{ alumno.nombre }} {{ alumno.apellidos }}</p>
+                <a class="btn btn-info" [routerLink]="['/perfil',alumno.idAlumno]"
+                    routerLinkActive="router-link-active">Ver
+                    Perfil</a>
+            </div>
+        </div>
+
+        }
+    </div>
+    }
+
+</div>
